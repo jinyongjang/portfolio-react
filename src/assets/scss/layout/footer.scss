@@ -1,0 +1,112 @@
+#footer {
+    display: flex;
+}
+#footer .left {
+    width: 30vw;
+    height: 50vh;
+    border-right: 1px solid #000;
+    position: relative;
+}
+#footer .left h1 {
+    padding: 7vh;
+    font-size: 2vh;
+}
+#footer .left p {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+#footer .right {
+    width: 70vw;
+    height: 50vh;
+    display: flex;
+    line-height: 1.6;
+    align-items: center;
+    position: relative;
+}
+#footer .right a{
+    width: 25%;
+}
+#footer .right p {
+    padding-bottom: 1vh;
+}
+#footer .right a .contactme {
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: 300;
+    background-color: #E9FF46;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#footer .right .sns {
+    width: 25%;
+}
+#footer .right .worklist {
+    width: 25%;
+}
+#footer .right .worklist h1 {
+    font-size: 2vh;
+    padding-bottom: 1vh;
+}
+#footer .right .worklist2 {
+    width: 25%;
+}
+
+@media (max-width: 700px) {
+    #footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        .left {
+            width: 100%;
+            height: 10vh;
+            border-right: 0;
+            h1 {
+                padding: 3vh 0 0 3vh;
+                font-size: 20px;
+                color: #ccc;
+            }
+            p {
+                right: 10px;
+                bottom: 0;
+            }
+        }
+        .right {
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 100%;
+            height: 60vh;
+            padding-left: 5vw;
+            a {
+                text-align: left;
+                width: 100%;
+                // display: block;
+                .contactme {
+                    position: relative;
+                    width: 80px;
+                    height: 30px;
+                    line-height: 30px;
+                    border: 1px solid #000;
+                    font-size: 12px;
+
+                }
+            }
+            .sns {
+                padding: 10px 0;
+                width: 100%;
+            }
+            .worklist {
+                width: 100%;
+            }
+            .worklist2 {
+                width: 100%;
+            }
+        }
+    }
+}

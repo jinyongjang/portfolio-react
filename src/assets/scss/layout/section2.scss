@@ -1,0 +1,157 @@
+
+.scrollarrow2 {
+    position: absolute;
+    right: 3vh;
+    top: 200px;
+}
+.scrollDownText2 {
+    font-size: 0.8vw;
+    position: absolute;
+    right: 0.8vh;
+    top: 40vh;
+    writing-mode : vertical-lr;
+}
+#section2 {
+    height: 207.4vh;
+    overflow: hidden;
+    display: flex;
+}
+#section2 .left {
+    width: 49vw;
+    height: 83vh;
+    position: relative;
+}
+#section2 .left h2 {
+    padding: 4vw 0 2vw 3vw;
+    font-size: 6vw;
+    font-weight: 200;
+    line-height: 1.2;
+}
+#section2 .left p {
+    font-family: "ChosunNm";
+    padding-left: 3vw;
+    line-height: 1.6;
+    color: #333;
+    position: relative;
+    font-size: 14px;
+}
+#section2 .logo-bg {
+    width: 29vw;
+    height: 30px;
+    background-color: #E9FF46;
+    position: absolute;
+    left: 0;
+    top: -4vw;
+    z-index: -1;
+}
+#section2 .right {
+
+}
+#section2 .right .right__wrap {
+    display: flex;
+    width: 51vw;
+    height: 41.55vh;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+#section2 .right .right-logo {
+    padding: 2vw 0 0 2vw;
+}
+#section2 .right .right-text {
+    padding-top: 9vw;
+    line-height: 1.6;
+    color: #333;
+}
+#section2 .right .right-text p {
+    font-family: "ChosunNm";
+    font-size: 14px;
+}
+#section2 .right .right-text h2 {
+    padding-bottom: 1vw;
+    font-size: 3vw;
+    font-weight: 200;
+}
+
+@media (max-width: 700px){
+    #section2 {
+        flex-wrap: wrap;
+        flex-direction: column;
+        // width: 100vw;
+        height: 150vh;
+        .left {
+            display: none;
+        }
+        .right {
+            height: 20vh;
+            .right__wrap {
+                flex-wrap: wrap;
+                flex-direction: column;
+                border-left: 0;
+                width: 100%;
+                height: 30vh;
+                .right-logo {
+                    width: 60px;
+                    height: 60px;
+                }
+                .right-text {
+                    padding: 0 2vh 0 2vw;
+                    h2 {
+                        // padding-top: 5vh;
+                        font-size: 20px;
+                    }
+                    p {
+                        
+                    }
+                }
+            }
+            .right-text {
+                padding: 0;
+            }
+        }
+
+    }
+}
+@media(max-width: 400px) {
+    #section2 {
+        .right {
+            .right__wrap {
+                .right-logo {
+                    width: 50px;
+                    height: 50px;
+                }
+                .right-text {
+                    h2 {
+                        padding-top: 2vh;
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+@media(max-width: 375px) {
+    #section2 {
+        .right {
+            .right__wrap {
+                .right-logo {
+                    width: 40px;
+                    height: 40px;
+                }
+                .right-text {
+                    h2 {
+                        padding-top: 1vh;
+                        font-size: 17px;
+                    }
+                    p {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+
+    }
+}

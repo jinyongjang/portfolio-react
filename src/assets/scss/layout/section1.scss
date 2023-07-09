@@ -1,0 +1,110 @@
+//arrow
+.scrollarrow {
+    position: absolute;
+    right: 3vh;
+    bottom: 3vh;
+    svg {
+        path {
+            width: 10vw; 
+            height: 50vh;
+        }
+    }
+}
+.scrollDownText {
+    font-size: 0.8vw;
+    position: absolute;
+    right: 0.8vh;
+    bottom: 30vh;
+    writing-mode : vertical-lr;
+}
+
+#section1 {
+    // width: 100%;
+    height: calc(100vh - 40px);
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5vw;
+    margin-bottom: 1vw;
+}
+#section1 .left {
+    width: 37vw;
+    height: 100%;
+    background-image: url(../../images/selfie.png);
+    background-size: cover;
+    background-position: center top;
+    border: 1px solid #000;
+}
+#section1 .right {
+    width: 59vw;
+    height: 100%;
+    border: 1px solid #000;
+    border-right: 0;
+    padding: 2vw;
+    position: relative;
+    background-color: #fff;
+}
+// #section1 .right .logo-bg {
+//     background-color: #E9FF46;
+//     width: 59vw;
+//     height: 50vh;
+//     position: absolute;
+//     right: 0; 
+//     bottom: -1vw;
+//     z-index: -1;
+// }
+#section1 .right h2 {
+    font-size: 5vw;
+    font-weight: 200;
+    line-height: 1.2;
+    margin-bottom: 1vw;
+}
+#section1 .right p {
+    font-family: 'ChosunNm';
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 7vh;
+}
+@media (max-width: 700px){
+    #section1 {
+        flex-wrap: wrap;
+        align-content: center;
+        .left {
+            margin: 0 auto;
+            width: 60vw;
+            height: 40vh;
+            border-radius: 20px 20px 0 0;
+        }
+        .right {
+            width: 100%;
+            border-top: 10px solid #423550;
+            border-left: 0;
+            border-bottom: 0;
+            height: 51vh;
+            h3, .scrollarrow {
+                display: none;
+            }
+            h2 {
+                padding-bottom: 30px;
+                font-size: 30px;
+            }
+            p {
+                padding-top: 0;
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    #section1 {
+        .right {
+            p {
+                font-size: 13px;
+            }
+            h2 {
+                padding-bottom: 15px;
+            }
+        }
+    }
+}

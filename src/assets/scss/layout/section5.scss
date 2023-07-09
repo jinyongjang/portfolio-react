@@ -1,0 +1,199 @@
+#section5 {
+    width: 500vw;
+    height: 87vh;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+#section5 .article {
+    width: 20%;
+    height: 87vh;
+    display: flex;
+}
+#section5 .article .left {
+    width: 50vw;
+    height: 100%;
+    border-right: 1px solid #000;
+    position: relative;
+}
+#section5 .article .left .siteCode a{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    font-size: 20px;
+    background-color: #c5c5c5;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#section5 .article .left .siteCode a:hover {
+    background-color: #fff;
+}
+#section5 .article .left .logo {
+    padding: 3vw;
+}
+#section5 .article .left h1 {
+    font-size: 4vw;
+    font-weight: 200;
+    padding: 22vh 0 0 3vw;
+    position: relative;
+}
+#section5 .article .left .logo-bg {
+    background-color: #E9FF46;
+    width: 32vw;
+    height: 2vh;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    z-index: -1;
+}
+#section5 .article .left p {
+    padding: 0 3vw;
+    line-height: 1.6;
+    font-size: 14px;
+    font-family: 'ChosunNm';
+}
+#section5 .article .a1 .right{
+
+}
+#section5 .right {
+    width: 50vw;
+    height: 100%;
+    background-color: #c5c5c5;
+    // border-bottom: 1px solid #000;
+    // filter: saturate(23%);
+}
+#section5 .right .siteview a{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    font-size: 20px;
+    background-color: #fff;
+}
+#section5 .right .rightImg {
+    padding-top: 70vh;
+    width: 50vw;
+    height: 20vh;
+}
+#section5 .right .rightImg.a1 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../images/sideeffect.png);
+}
+#section5 .right .rightImg.a2 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../images/searchEffect.png);
+}
+#section5 .right .rightImg.a3 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../images/quizeffect.png);
+}
+#section5 .right .rightImg.a4 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../images/mouseeffect.png);
+}
+#section5 .right .rightImg.a5 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../images/parallaxeffect.png);
+}
+#section5 .right .rightImg.a6 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../images/scrolleffect.png);
+}
+
+@media(max-width: 700px) {
+    #section5 {
+        flex-wrap: wrap;
+        flex-direction: column;
+        .article {
+            flex-wrap: wrap;
+            flex-direction: column;
+            .left {
+                width: 100%;
+                height: 30%;
+                .logo svg{
+                    width: 50px;
+                    height: 50px;
+                }
+                h1 {
+                    padding-top: 0;
+                    .logo-bg {
+                        display: none;
+                    }
+                }
+            }
+            .right {
+                width: 100%;
+                height: 70%;
+                border-right: 1px solid #000;
+                border-top: 1px solid #000;
+
+                .rightImg {
+                    width: 100%;
+                    padding-top: 50vh;
+                    // background-size: cover;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 500px) {
+    #section5 {
+        .article {
+            .left {
+                .siteCode a {
+                    width: 100px;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 17px;
+                }
+                p {
+                    padding-top: 1vh;
+                    font-size: 12px;
+                }
+            }
+            .right {
+                .siteview a {
+                    width: 100px;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 380px) {
+    #section5 {
+        .article {
+            .left {
+                .logo svg{
+                    width: 30px;
+                    height: 30px;
+                }
+                p {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
