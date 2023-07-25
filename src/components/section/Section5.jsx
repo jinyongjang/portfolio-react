@@ -72,10 +72,7 @@ const Section5 = () => {
         <article className="article">
           <div className="left">
             <div className="siteCode">
-              <Link
-                to={'https://github.com/jinyongjang/web2023/blob/main/javascript/slider/sliderEffect01.html'}
-                target="_blank"
-              >
+              <Link to={'https://github.com/jinyongjang/slide_Effect'} target="_blank">
                 code
               </Link>
             </div>
@@ -158,10 +155,7 @@ const Section5 = () => {
         <article className="article">
           <div className="left">
             <div className="siteCode">
-              <Link
-                to={'https://github.com/jinyongjang/web2023/blob/main/javascript/quiz/quizEffect01.html'}
-                target="_blank"
-              >
+              <Link to={'https://github.com/jinyongjang/quiz_Effect'} target="_blank">
                 code
               </Link>
             </div>
@@ -202,10 +196,7 @@ const Section5 = () => {
         <article className="article">
           <div className="left">
             <div className="siteCode">
-              <Link
-                to={'https://github.com/jinyongjang/web2023/blob/main/javascript/mouse/mouseEffect01.html'}
-                target="_blank"
-              >
+              <Link to={'https://github.com/jinyongjang/mouse_Effect'} target="_blank">
                 code
               </Link>
             </div>
@@ -246,10 +237,7 @@ const Section5 = () => {
         <article className="article">
           <div className="left">
             <div className="siteCode">
-              <Link
-                to={'https://github.com/jinyongjang/web2023/blob/main/javascript/parallax/gsap01.html'}
-                target="_blank"
-              >
+              <Link to={'https://github.com/jinyongjang/parallax_Effects'} target="_blank">
                 code
               </Link>
             </div>
